@@ -27,7 +27,7 @@ for (let i = 15; i <= 30; i++) {
   if (i % 2 === 1) console.log(i);
 }
 
-/*2. Implement function range(start: number, end: number) doing the same task.*/
+/* 2. Implement function range(start: number, end: number) doing the same task.*/
 const range = (start, end) => {
   for (let i = start; i <= end; i++) {
     if (i % 2 === 1) console.log(i);
@@ -79,8 +79,8 @@ console.log(`Name after reassigning to another object: ${anotherPerson.name}`);
 
 /* Explanation:
 When changing object properties we do not change the actual reference to the memory slot, where this object is located.
-Nevertheless when we try to reassign another value to const identifier, it is needed to change the reference in memory, so it would point to
-another location, which is a contradiction to the const concept.*/
+Nevertheless when we try to reassign another value to const identifier, it is needed to change the reference in memory,
+so it would point to another location, which is a contradiction to the const concept.*/
 
 /* 6.Implement function createUser with signature createUser(name: string, city: string): object.
 Example: createUser('Marcus Aurelius', 'Roma') will return object { name: 'Marcus Aurelius', city: 'Roma' }*/
@@ -92,13 +92,14 @@ console.log(createUser('Marcus Aurelius', 'Roma'));
 
 // Array
 
-/*1.Define array of objects with two fields: name and phone (phone book). Example: { name: 'Marcus Aurelius', phone: '+380445554433' }.*/
+/* 1.Define array of objects with two fields: name and phone (phone book). Example: { name: 'Marcus Aurelius', phone: '+380445554433' }.*/
 const contacts = [
     { name: 'Marcus Aurelius', phone: '+380445554433' },
     { name: 'John Marston', phone: '+380441233212' },
 ];
 
-/*2.Implement function findPhoneByName with signature findPhoneByName(name: string): string. Returning phone from that object where field name equals argument name. Use for loop for this search.*/
+/*2.Implement function findPhoneByName with signature findPhoneByName(name: string): string.
+Returning phone from that object where field name equals argument name. Use for loop for this search.*/
 const findPhoneByName = (name) => {
     for(const contact of contacts) {
         if(contact.name === name) {
@@ -117,7 +118,8 @@ const hashContacts = {
    'John Marston': '+380441233212',
 };
 
-/*Implement function findPhoneByName with signature findPhoneByName(name: string): string. Returning phone from hash/object. Use hash[key] to find needed phone.*/
+/*Implement function findPhoneByName with signature findPhoneByName(name: string): string.
+Returning phone from hash/object. Use hash[key] to find needed phone.*/
 const findPhoneByNameFromHash = name => {
     for(const key in hashContacts) {
         if(key === name) {
