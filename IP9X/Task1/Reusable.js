@@ -9,7 +9,7 @@ let name = 'Stanislav Solovyov';
 const BIRTHDATE = 1989;
 
 // 3.Prepare function to print greeting with single argument.
-const greeting = (name) => console.log(`Hello ${name}!`);
+const greeting = name => console.log(`Hello ${name}!`);
 
 // 4.Call function passing value as literal
 greeting('Stanislav Solovyov');
@@ -19,6 +19,8 @@ greeting(name);
 
 // 6.Call function passing constant.
 greeting(BIRTHDATE);
+
+
 
 // Loop
 
@@ -35,7 +37,9 @@ const range = (start, end) => {
 };
 range(15, 30);
 
-// Функции
+
+
+// Function
 
 /* 1.Implement function average with signature average(a: number, b: number): number calculating average (arithmetic mean).*/
 const average = (a, b) => (a + b) / 2;
@@ -56,6 +60,8 @@ for(let i = 1; i <= 10; i++) {
     const averageNumber = average(squared, cubed);
     console.log(`Average: ${averageNumber}`);
 }
+
+
 
 // Object
 
@@ -90,6 +96,9 @@ const createUser = (name, city) => ({
 
 console.log(createUser('Marcus Aurelius', 'Roma'));
 
+
+
+
 // Array
 
 /* 1.Define array of objects with two fields: name and phone (phone book). Example: { name: 'Marcus Aurelius', phone: '+380445554433' }.*/
@@ -109,6 +118,9 @@ const findPhoneByName = (name) => {
 }
 
 console.log(findPhoneByName('John Marston'));
+
+
+
 
 // Hash
 
